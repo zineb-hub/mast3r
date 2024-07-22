@@ -20,6 +20,16 @@ pl.ion()
 
 torch.backends.cuda.matmul.allow_tf32 = True  # for gpu >= Ampere and pytorch >= 1.12
 
+#title
+st. title("Image Matching")
+
+#subtitle
+st.markdown("## Optical Character Recognition - Using 'easyoor', 'streamlit' - hosted on Spaces")
+
+st.markdown("")
+#inage uploader
+image = st. file_uploader(label = "Upload your image here", type=["png', 'jpg','jpeg'1])
+
 if __name__ == '__main__':
     parser = get_args_parser()
     args = parser.parse_args()
