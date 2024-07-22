@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://zino36:$HF_TOKEN@huggingface.co/spaces/zino36/Matching main
+        run: git push https://zino36:$HF_TOKEN@huggingface.co/spaces/zino36/Image-Matching-app main
